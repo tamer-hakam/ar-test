@@ -5,7 +5,7 @@
 	
 	<a-scene embedded arjs='sourceType: webcam;'>
 		<a-assets>
-			<src='pattern-20070906166.patt'/>
+			<pat id="bodo" src='pattern-20070906166.patt'/>
 		</a-assets>
 		<a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 0.5 0" segments-height="53">
          <a-animation attribute="scale"
@@ -16,6 +16,6 @@
               easing= "ease-in-out-circ"     
               repeat="indefinite"></a-animation>
      </a-sphere>
-		<a-marker-camera preset='custom' type='pattern' src='pattern-20070906166.patt'></a-marker-camera>
+		<a-marker-camera preset='custom' type='pattern' src='#bodo'></a-marker-camera>
 	</a-scene>
 </body>
